@@ -17,19 +17,20 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/text_app"
+                android:id="@+id/text_bluetooth"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:background="#00ff00"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@color/green"
                 android:textAlignment="center"
-                android:text="BlueToothApp" />
+                android:text="Bluetooth ON" />
 
             <ListView
-                android:id="@+id/listPairedDevices"
+                android:id="@+id/list_paired_devices"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="#ff0000"
+                android:background="#a060a0"
                 android:divider="@color/black"
                 android:dividerHeight="2dp" />
 
@@ -42,12 +43,47 @@
                 android:text="New devices" />
 
             <ListView
-                android:id="@+id/listNewDevices"
+                android:id="@+id/list_new_devices"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="#ffff00"
+                android:background="#a0a0ff"
                 android:divider="@color/black"
                 android:dividerHeight="2dp" />
+
+            <Button
+                android:id="@+id/scan_devices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="SCAN DEVICES"
+                android:textSize="35sp"
+                android:backgroundTint="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="My device MAC: "
+                android:background="#a0ffa0"/>
+
+            <Button
+                android:id="@+id/make_visible_my_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="VISIBILITY TO OTHER DEVICES"
+                android:textSize="15sp"
+                android:backgroundTint="@color/black" />
+
+            <TextView
+                android:id="@+id/text_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Log:"
+                android:background="#ffa000" />
 
         </LinearLayout>
 
